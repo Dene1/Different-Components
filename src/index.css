@@ -66,7 +66,7 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
+  font-family: var(--heading), serif;
   font-weight: 500;
   color: var(--text-h);
 }
@@ -97,7 +97,7 @@ p {
 
 code,
 .counter {
-  font-family: var(--mono);
+  font-family: var(--mono), serif;
   display: inline-flex;
   border-radius: 4px;
   color: var(--text-h);
@@ -130,7 +130,7 @@ code {
   }
 }
 
-.hero {
+.container {
   position: relative;
   display: flex;
   gap: 20px;
@@ -169,7 +169,7 @@ code {
   }
 }
 
-#center {
+#counter {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -179,6 +179,19 @@ code {
     padding: 32px 20px 24px;
     gap: 18px;
   }
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1080px;
+  gap: 10px;
 }
 
 #paragraf {
@@ -194,12 +207,31 @@ code {
   }
 }
 
+.slider-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 #slider {
   display: flex;
   flex-direction: column;
   gap: 20px;
   place-items: center;
   margin: 30px 0;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+#input-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  place-items: center;
+  margin-bottom: 200px;
 
   @media (max-width: 1024px) {
     padding: 32px 20px 24px;
