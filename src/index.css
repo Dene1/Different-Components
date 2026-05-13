@@ -208,9 +208,12 @@ code {
 }
 
 .slider-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 10px 0;
 }
 
 #slider {

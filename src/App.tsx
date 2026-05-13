@@ -11,7 +11,7 @@ function App() {
 			<h1>Get started</h1>
 			<Counter />
 			<Paragraf />
-			<Slider visible={4} />
+			<Slider visible={6} />
 			<InputText max={20}
 			           min={5} />
 		</>
